@@ -19,3 +19,4 @@ base64 = "0.21"
 sha2 = "0.10"
 clap = { version = "4.0", features = ["derive"] }
 dotenvy = "0.15"
+urlencoding = "2.1"
