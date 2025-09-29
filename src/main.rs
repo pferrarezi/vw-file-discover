@@ -72,13 +72,13 @@ fn create_app_config(matches: &clap::ArgMatches) -> Result<AppConfig> {
 
     let days_back: i64 = matches
         .get_one::<String>("days-back")
-        .unwrap()
+        .unwrap_or(&"15".to_string())
         .parse()
         .map_err(|_| anyhow::anyhow!("Invalid days-back value"))?;
 
     let batch_size: usize = matches
         .get_one::<String>("batch-size")
-        .unwrap()
+        .unwrap_or(&"1000".to_string())
         .parse()
         .map_err(|_| anyhow::anyhow!("Invalid batch-size value"))?;
 
