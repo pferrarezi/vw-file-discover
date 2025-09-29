@@ -6,6 +6,7 @@ target/
 # IDE
 .vscode/
 .idea/
+.vs/
 
 # Environment variables
 .env
